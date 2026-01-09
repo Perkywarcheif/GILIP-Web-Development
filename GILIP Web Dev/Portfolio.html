@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anirudh Mamilla | Software Developer Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f7fb;
+  color:#222;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  background:#111827;
+  color:white;
+  padding:15px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h2{
+  color:#60a5fa;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:#60a5fa;
+}
+
+/* ===== HERO ===== */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:80px 8%;
+  flex-wrap:wrap;
+}
+
+.hero-text{
+  max-width:550px;
+}
+
+.hero-text h1{
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+.hero-text span{
+  color:#2563eb;
+}
+
+.hero-text p{
+  margin:20px 0;
+  line-height:1.6;
+}
+
+.hero-buttons a{
+  display:inline-block;
+  padding:12px 25px;
+  border-radius:6px;
+  text-decoration:none;
+  margin-right:15px;
+  font-weight:500;
+}
+
+.btn-primary{
+  background:#2563eb;
+  color:white;
+}
+
+.btn-outline{
+  border:2px solid #2563eb;
+  color:#2563eb;
+}
+
+.btn-outline:hover{
+  background:#2563eb;
+  color:white;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  padding:80px 8%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:2.2rem;
+  margin-bottom:50px;
+}
+
+/* ===== ABOUT ===== */
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.about div{
+  background:white;
+  padding:30px;
+  border-radius:10px;
+}
+
+/* ===== SKILLS ===== */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.skill-card{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* ===== PROJECTS ===== */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.project-card{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-5px);
+}
+
+/* ===== CONTACT ===== */
+.contact{
+  text-align:center;
+}
+
+.contact a{
+  display:inline-block;
+  margin:15px;
+  text-decoration:none;
+  color:#2563eb;
+  font-weight:500;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:40px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+  .about{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Anirudh.</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Anirudh Mamilla</span></h1>
+    <p>
+      Aspiring Software Developer passionate about building intelligent web applications,
+      combining AI, machine learning and modern web technologies to create impactful solutions.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-outline">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about">
+    <div>
+      <h3>Who I Am</h3>
+      <p>
+        I am Anirudh Mamilla, a fresher software developer with strong foundations in
+        Java, Python, data analytics, and web development. I enjoy solving problems and
+        building practical applications that blend AI with scalable web systems.
+      </p>
+    </div>
+
+    <div>
+      <h3>What I Do</h3>
+      <p>
+        ✔ Frontend Development (HTML, CSS, JavaScript, React)<br>
+        ✔ Backend Basics (Node.js, APIs)<br>
+        ✔ Machine Learning & Data Analytics<br>
+        ✔ NLP Chatbot Development<br>
+        ✔ GitHub & Project Deployment
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills">
+    <div class="skill-card">Java Programming</div>
+    <div class="skill-card">Python (NumPy, Pandas, Scikit-Learn)</div>
+    <div class="skill-card">HTML, CSS, JavaScript</div>
+    <div class="skill-card">React & Node.js</div>
+    <div class="skill-card">Machine Learning</div>
+    <div class="skill-card">Data Analytics</div>
+    <div class="skill-card">NLP Chatbots</div>
+    <div class="skill-card">Git & GitHub</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects">
+
+    <div class="project-card">
+      <h3>Smart Resume Builder</h3>
+      <p>
+        AI-powered resume builder using React, Node.js, Tailwind CSS and OpenAI API
+        with real-time suggestions and MongoDB backend.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>ThirdEye Final Year Project</h3>
+      <p>
+        Web platform built using HTML, CSS, PHP and database integration to demonstrate
+        real-world web application flow.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>NLP Chatbot</h3>
+      <p>
+        Chatbot developed using NLP techniques and deployed with FastAPI and Streamlit.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Mini Web Projects</h3>
+      <p>
+        Music Player, Image Gallery, Calculator and Personal Portfolio websites.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Let's Connect</h2>
+
+  <p>Email: <b>anirudh.mamilla1@gmail.com</b></p>
+
+  <a href="https://github.com/Perkywarcheif" target="_blank">GitHub</a>
+  <a href="https://www.linkedin.com/in/m-anirudh-898a68257" target="_blank">LinkedIn</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Anirudh Mamilla • Built with ❤️ using HTML & CSS
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anirudh Mamilla | HTML Layout, Tables, Forms & CSS Practice</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    section {
+      border: 2px solid #ccc;
+      padding: 15px;
+      margin-bottom: 25px;
+    }
+
+    /* Tables */
+    table {
+      border-collapse: collapse;
+      margin-top: 10px;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Classes Demo */
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    .note {
+      color: blue;
+    }
+
+    .red { color: red; }
+    .bold { font-weight: bold; }
+
+    #unique {
+      background-color: yellow;
+      padding: 10px;
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .primary { background-color: royalblue; color: white; }
+    .secondary { background-color: gray; color: white; }
+
+    /* Navigation */
+    .nav {
+      list-style-type: none;
+      padding: 0;
+    }
+    .nav li {
+      display: inline;
+      margin-right: 15px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: darkblue;
+    }
+    .nav a:hover {
+      color: orange;
+    }
+
+    /* Boxes */
+    .box {
+      width: 80px;
+      height: 80px;
+      margin: 10px;
+      display: inline-block;
+    }
+    .red-box { background-color: red; }
+    .green-box { background-color: green; }
+    .blue-box { background-color: blue; }
+  </style>
+</head>
+
+<body>
+
+<h1>HTML Layout & Styling – Practice Page</h1>
+<h3>👤 Created by: <mark>Anirudh Mamilla</mark></h3>
+<p>
+  📧 Email: <b>anirudh.mamilla1@gmail.com</b><br>
+  💻 GitHub: <u>github.com/Perkywarcheif</u><br>
+  🚀 Focus: <strong>AI + Web Development</strong>
+</p>
+
+<!-- ================= TABLE ================= -->
+<section>
+  <h2>1. Basic Table (Profile)</h2>
+  <table>
+    <tr><th>Name</th><th>Role</th></tr>
+    <tr><td>Anirudh Mamilla</td><td>Software Developer</td></tr>
+  </table>
+</section>
+
+<!-- ================= FORM ================= -->
+<section>
+  <h2>2. Basic Form (Contact Demo)</h2>
+  <form>
+    Name: <input type="text" placeholder="Your Name"><br><br>
+    Email: <input type="email" placeholder="yourmail@example.com"><br><br>
+    <button>Submit</button>
+  </form>
+</section>
+
+<!-- ================= BLOCK vs INLINE ================= -->
+<section>
+  <h2>3. Block vs Inline</h2>
+  <h3>This is a Block Element (Heading)</h3>
+  <p>This paragraph is also a Block element</p>
+  <span>This is Inline text</span>
+  <b>This is Inline Bold text</b>
+</section>
+
+<!-- ================= NAVIGATION ================= -->
+<section>
+  <h2>4. Navigation Menu</h2>
+  <ul class="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</section>
+
+<!-- ================= CLASS & ID ================= -->
+<section>
+  <h2>5. Class and ID</h2>
+  <p class="highlight">Anirudh is practicing CSS classes</p>
+  <h3 id="unique">This section uses a unique ID</h3>
+  <p class="note">Styled using class selector</p>
+  <p class="red bold">Multiple classes applied together</p>
+</section>
+
+<!-- ================= BUTTON STYLES ================= -->
+<section>
+  <h2>6. Styled Buttons</h2>
+  <button class="btn primary">View Projects</button>
+  <button class="btn secondary">Contact Me</button>
+</section>
+
+<!-- ================= BOX LAYOUT ================= -->
+<section>
+  <h2>7. Box Layout (Skill Colors)</h2>
+  <div class="box red-box" title="HTML"></div>
+  <div class="box green-box" title="CSS"></div>
+  <div class="box blue-box" title="JavaScript"></div>
+</section>
+
+<!-- ================= TABLE LAYOUT ================= -->
+<section>
+  <h2>8. Table Layout</h2>
+  <table>
+    <tr>
+      <td width="50%">Profile Summary</td>
+      <td width="50%">Skills Overview</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ================= HEADER FOOTER ================= -->
+<section>
+  <h2>9. Header, Content, Footer Layout</h2>
+  <table>
+    <tr><td colspan="2">Header - Anirudh Mamilla Portfolio</td></tr>
+    <tr>
+      <td width="70%">Main Content Area</td>
+      <td width="30%">Sidebar (Links / Info)</td>
+    </tr>
+    <tr><td colspan="2">Footer © 2026</td></tr>
+  </table>
+</section>
+
+<!-- ================= IFRAME ================= -->
+<section>
+  <h2>10. Iframe Layout</h2>
+  <table>
+    <tr>
+      <td width="30%">
+        <iframe src="menu.html" width="100%" height="200"></iframe>
+      </td>
+      <td width="70%">
+        <iframe src="content.html" width="100%" height="200"></iframe>
+      </td>
+    </tr>
+  </table>
+</section>
+
+</body>
+</html>

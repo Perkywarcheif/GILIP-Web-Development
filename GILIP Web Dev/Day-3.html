@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anirudh Mamilla | HTML Tables & Forms Practice</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        section {
+            border: 2px solid #ddd;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>HTML Tables & Forms – Practice Page</h1>
+<h3>👤 Created by: <mark>Anirudh Mamilla</mark></h3>
+<p>
+    📧 Email: <b>anirudh.mamilla1@gmail.com</b><br>
+    💻 GitHub: <u>github.com/Perkywarcheif</u><br>
+    🚀 Focus: <strong>AI + Web Development</strong>
+</p>
+
+<!-- ================= TABLE BASICS ================= -->
+<section>
+    <h2>1. Basic Table (Profile Info)</h2>
+    <table>
+        <tr><th>Name</th><th>Role</th></tr>
+        <tr><td>Anirudh Mamilla</td><td>Software Developer</td></tr>
+    </table>
+</section>
+
+<!-- ================= TABLE WITH CAPTION ================= -->
+<section>
+    <h2>2. Table with Caption (Skill Ratings)</h2>
+    <table>
+        <caption>My Skill Levels</caption>
+        <tr><th>Skill</th><th>Level</th></tr>
+        <tr><td>Java</td><td>Intermediate</td></tr>
+        <tr><td>Python</td><td>Intermediate</td></tr>
+        <tr><td>HTML/CSS</td><td>Strong</td></tr>
+    </table>
+</section>
+
+<!-- ================= ROWSPAN & COLSPAN ================= -->
+<section>
+    <h2>3. Rowspan & Colspan (Project Scores)</h2>
+    <table>
+        <tr>
+            <th rowspan="2">Project</th>
+            <th colspan="2">Evaluation</th>
+        </tr>
+        <tr>
+            <th>Design</th>
+            <th>Logic</th>
+        </tr>
+        <tr>
+            <td>Smart Resume Builder</td>
+            <td>9/10</td>
+            <td>8/10</td>
+        </tr>
+    </table>
+</section>
+
+<!-- ================= THEAD TBODY TFOOT ================= -->
+<section>
+    <h2>4. Table Sections (Learning Expenses)</h2>
+    <table>
+        <thead>
+            <tr><th>Resource</th><th>Cost</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Online Courses</td><td>Free</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td>Total</td><td>₹0</td></tr>
+        </tfoot>
+    </table>
+</section>
+
+<!-- ================= TABLE WITH IMAGE & LINK ================= -->
+<section>
+    <h2>5. Table with Image and Link</h2>
+    <table>
+        <tr><th>Platform</th><th>Logo</th></tr>
+        <tr>
+            <td>GitHub</td>
+            <td><img src="https://via.placeholder.com/60"></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr><th>Website</th><th>Link</th></tr>
+        <tr>
+            <td>My GitHub</td>
+            <td><a href="https://github.com/Perkywarcheif">Visit</a></td>
+        </tr>
+    </table>
+</section>
+
+<!-- ================= COMPLEX TABLE ================= -->
+<section>
+    <h2>6. Learning Roadmap</h2>
+    <table>
+        <tr><th>Course</th><th>Duration</th><th>Status</th></tr>
+        <tr><td>HTML</td><td>2 Weeks</td><td>Completed</td></tr>
+        <tr><td>CSS</td><td>2 Weeks</td><td>In Progress</td></tr>
+        <tr><td>JavaScript</td><td>1 Month</td><td>Upcoming</td></tr>
+    </table>
+</section>
+
+<!-- ================= BASIC FORM ================= -->
+<section>
+    <h2>7. Name Input Form</h2>
+    <form>
+        Your Name: <input type="text" placeholder="Anirudh"><br><br>
+        <button>Submit</button>
+    </form>
+</section>
+
+<!-- ================= REGISTRATION FORM ================= -->
+<section>
+    <h2>8. Registration Form (Demo)</h2>
+    <form>
+        Name: <input type="text" placeholder="Anirudh Mamilla"><br><br>
+        Email: <input type="email" placeholder="anirudh.mamilla1@gmail.com"><br><br>
+        Password: <input type="password"><br><br>
+        <button>Register</button>
+    </form>
+</section>
+
+<!-- ================= RADIO & CHECKBOX ================= -->
+<section>
+    <h2>9. Preferences</h2>
+    Role:<br>
+    <input type="radio" name="role"> Frontend
+    <input type="radio" name="role"> Backend
+    <input type="radio" name="role"> Full Stack
+    <br><br>
+
+    Skills:<br>
+    <input type="checkbox"> HTML
+    <input type="checkbox"> CSS
+    <input type="checkbox"> JavaScript
+    <input type="checkbox"> Python
+</section>
+
+<!-- ================= DROPDOWN & TEXTAREA ================= -->
+<section>
+    <h2>10. Feedback</h2>
+    Preferred Tech:
+    <select>
+        <option>Web Development</option>
+        <option>AI / ML</option>
+        <option>DevOps</option>
+    </select>
+
+    <br><br>
+
+    Feedback:<br>
+    <textarea rows="4" cols="30" placeholder="Write your feedback..."></textarea>
+</section>
+
+<!-- ================= FILE, DATE, NUMBER ================= -->
+<section>
+    <h2>11. Special Inputs</h2>
+    Upload Resume: <input type="file"><br><br>
+    DOB: <input type="date"><br><br>
+    Experience (Years): <input type="number" min="0" max="10">
+</section>
+
+<!-- ================= LOGIN FORM TABLE ================= -->
+<section>
+    <h2>12. Login Form (Demo)</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" placeholder="anirudh.mamilla1@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button>Login</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+<section>
+    <h2>13. Contact Me</h2>
+    <form>
+        Name: <input type="text" placeholder="Your Name"><br><br>
+        Email: <input type="email" placeholder="yourmail@example.com"><br><br>
+        Message:<br>
+        <textarea rows="4" placeholder="Message for Anirudh"></textarea><br><br>
+        <button>Send</button>
+    </form>
+</section>
+
+<!-- ================= ADVANCED INPUT TYPES ================= -->
+<section>
+    <h2>14. Advanced Inputs</h2>
+
+    Favorite Color: <input type="color"><br><br>
+    Confidence Level: <input type="range"><br><br>
+    Search Skills: <input type="search"><br><br>
+    Hidden ID: <input type="hidden" value="ANIRUDH123">
+</section>
+
+<!-- ================= VALIDATION FORM ================= -->
+<section>
+    <h2>15. Form with Validation</h2>
+    <form>
+        Full Name: <input type="text" required><br><br>
+        Email: <input type="email" required><br><br>
+        Password: <input type="password" minlength="6" required><br><br>
+        Phone: <input type="tel" pattern="[0-9]{10}" placeholder="10 digits"><br><br>
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</section>
+
+</body>
+</html>
