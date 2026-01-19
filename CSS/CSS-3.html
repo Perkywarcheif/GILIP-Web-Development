@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anirudh Mamilla | CSS3 Layout Master</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ========== GLOBAL ========== */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  margin: 0;
+  background: #f4f6f8;
+}
+section {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+h1, h2 {
+  color: #2c3e50;
+}
+
+/* ========== GRID BASICS ========== */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.grid-3 div {
+  background: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ========== FLEX CENTERING ========== */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: #dff0ff;
+}
+
+/* ========== FLEX NAVBAR ========== */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: navy;
+  padding: 12px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ========== CARD GRID ========== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 15px;
+}
+.card {
+  background: lightseagreen;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ========== POSITIONING ========== */
+.relative-box {
+  position: relative;
+  height: 200px;
+  background: #ddd;
+}
+.absolute-box {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: tomato;
+  color: white;
+  padding: 10px;
+}
+
+/* ========== Z-INDEX ========== */
+.z-container {
+  position: relative;
+  height: 200px;
+}
+.red {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: red;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+.blue {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: blue;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}
+
+/* ========== STICKY NAV ========== */
+.sticky {
+  position: sticky;
+  top: 0;
+  background: #04AA6D;
+  color: white;
+  padding: 10px;
+}
+
+/* ========== MODAL ========== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+/* ========== GALLERY ========== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+}
+
+/* ========== TOOLTIP ========== */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tip {
+  visibility: hidden;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+.tooltip:hover .tip {
+  visibility: visible;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PROFILE -->
+<section>
+  <h1>Anirudh Mamilla</h1>
+  <p><b>Web Developer | AI & Web Enthusiast</b></p>
+  <p>Email: <a href="mailto:anirudh.mamilla1@gmail.com">anirudh.mamilla1@gmail.com</a></p>
+</section>
+
+<!-- GRID -->
+<section>
+  <h2>CSS Grid (3 Columns)</h2>
+  <div class="grid-3">
+    <div>Grid 1</div>
+    <div>Grid 2</div>
+    <div>Grid 3</div>
+  </div>
+</section>
+
+<!-- FLEX -->
+<section>
+  <h2>Flexbox Centering</h2>
+  <div class="flex-center">Centered Card</div>
+</section>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact</a>
+</nav>
+
+<!-- CARD GRID -->
+<section>
+  <h2>CSS Card Grid</h2>
+  <div class="card-grid">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">React</div>
+  </div>
+</section>
+
+<!-- POSITION -->
+<section>
+  <h2>Relative & Absolute Position</h2>
+  <div class="relative-box">
+    <div class="absolute-box">Absolute Box</div>
+  </div>
+</section>
+
+<!-- Z INDEX -->
+<section>
+  <h2>Z-Index Overlap</h2>
+  <div class="z-container">
+    <div class="red"></div>
+    <div class="blue"></div>
+  </div>
+</section>
+
+<!-- STICKY -->
+<div class="sticky">Sticky Section Header</div>
+
+<section style="height:400px">
+  <p>Scroll to see sticky behavior.</p>
+</section>
+
+<!-- MODAL -->
+<section>
+  <h2>Modal Popup</h2>
+  <button onclick="document.getElementById('modal').style.display='block'">
+    Open Modal
+  </button>
+</section>
+
+<div id="modal" class="modal" onclick="this.style.display='none'">
+  <div class="modal-content">
+    <p>Hello Anirudh 👋</p>
+    <p>This is a modal box</p>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section>
+  <h2>Responsive Image Gallery</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/200">
+    <img src="https://via.placeholder.com/200">
+    <img src="https://via.placeholder.com/200">
+  </div>
+</section>
+
+<!-- TOOLTIP -->
+<section>
+  <h2>Tooltip</h2>
+  <div class="tooltip">Hover me
+    <span class="tip">CSS Tooltip</span>
+  </div>
+</section>
+
+</body>
+</html>

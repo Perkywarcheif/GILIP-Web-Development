@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anirudh Mamilla | CSS Master Practice</title>
+
+  <style>
+    /* ================= UNIVERSAL SELECTOR ================= */
+    * {
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    /* ================= ELEMENT SELECTOR ================= */
+    p {
+      font-size: 16px;
+    }
+
+    /* ================= CLASS SELECTOR ================= */
+    .highlight {
+      background-color: #fff3cd;
+      padding: 6px;
+    }
+
+    /* ================= ID SELECTOR ================= */
+    #profile {
+      background-color: #eef2f3;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* ================= GROUP SELECTOR ================= */
+    h1, h2 {
+      color: navy;
+    }
+
+    /* ================= DESCENDANT SELECTOR ================= */
+    .card p {
+      color: #333;
+    }
+
+    /* ================= CHILD SELECTOR ================= */
+    .skills > li {
+      color: green;
+    }
+
+    /* ================= ADJACENT SIBLING ================= */
+    h2 + p {
+      color: brown;
+    }
+
+    /* ================= GENERAL SIBLING ================= */
+    h3 ~ p {
+      color: purple;
+    }
+
+    /* ================= ATTRIBUTE SELECTOR ================= */
+    input[type="text"] {
+      background-color: lightyellow;
+    }
+
+    /* ================= PSEUDO CLASSES ================= */
+    button:hover {
+      background-color: tomato;
+      color: white;
+    }
+
+    input:focus {
+      background-color: lightblue;
+    }
+
+    li:first-child { background-color: #e6f7ff; }
+    li:last-child { background-color: #e8ffe8; }
+    li:nth-child(2) { font-weight: bold; }
+
+    p:not(.skip) {
+      background-color: #f9f9f9;
+    }
+
+    /* ================= COLORS ================= */
+    .hex { color: #00aa00; }
+    .rgb { color: rgb(0,0,255); }
+    .rgba { color: rgba(255,0,0,0.6); }
+    .hsl { color: hsl(200,100%,40%); }
+
+    /* ================= UNITS ================= */
+    .box-percent { width: 50%; background: #ddd; padding: 10px; }
+    .box-vw { width: 60vw; background: lightgreen; padding: 10px; }
+    .box-vh { height: 20vh; background: lightblue; padding: 10px; }
+
+    /* ================= CARD ================= */
+    .card {
+      background: #ffffff;
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 5px solid navy;
+    }
+
+    /* ================= BUTTON ================= */
+    .btn {
+      padding: 10px 15px;
+      border: none;
+      background: navy;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* ================= TABLE ================= */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* ================= LINKS ================= */
+    a[href^="https"] {
+      background-color: lightgreen;
+      padding: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= PROFILE ================= -->
+<div id="profile">
+  <h1>Anirudh Mamilla</h1>
+  <p class="highlight">Web Developer | AI & Web Enthusiast</p>
+  <p>Email: <a href="mailto:anirudh.mamilla1@gmail.com">anirudh.mamilla1@gmail.com</a></p>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div class="card">
+  <h2>About Me</h2>
+  <p>
+    I am learning <b>HTML, CSS, and JavaScript</b> to build modern web applications.
+    This page demonstrates <em>all major CSS selectors and properties</em>.
+  </p>
+</div>
+
+<!-- ================= SKILLS ================= -->
+<div class="card">
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React (Learning)</li>
+  </ul>
+</div>
+
+<!-- ================= COLORS ================= -->
+<div class="card">
+  <h2>Color Examples</h2>
+  <p class="hex">Hex Color</p>
+  <p class="rgb">RGB Color</p>
+  <p class="rgba">RGBA Color</p>
+  <p class="hsl">HSL Color</p>
+</div>
+
+<!-- ================= UNITS ================= -->
+<div class="card">
+  <h2>CSS Units</h2>
+  <div class="box-percent">50% width</div><br>
+  <div class="box-vw">60vw width</div><br>
+  <div class="box-vh">20vh height</div>
+</div>
+
+<!-- ================= FORM ================= -->
+<div class="card">
+  <h2>Contact Form</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required><br><br>
+    <input type="email" placeholder="Your Email"><br><br>
+    <button class="btn">Submit</button>
+  </form>
+</div>
+
+<!-- ================= TABLE ================= -->
+<div class="card">
+  <h2>Skill Assessment</h2>
+  <table>
+    <tr>
+      <th>Skill</th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>70</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ================= LINKS ================= -->
+<div class="card">
+  <h2>Useful Links</h2>
+  <p><a href="https://developer.mozilla.org">MDN Web Docs</a></p>
+</div>
+
+</body>
+</html>

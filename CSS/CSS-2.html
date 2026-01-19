@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anirudh Mamilla | CSS Text, Box & Layout Master</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    /* ================= GLOBAL ================= */
+    * {
+      box-sizing: border-box;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+    }
+
+    section {
+      background: #ffffff;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    /* ================= TEXT PROPERTIES ================= */
+    .blue-text { color: blue; }
+    .center-text { text-align: center; }
+    .underline { text-decoration: underline; }
+    .uppercase { text-transform: uppercase; }
+    .letter-space { letter-spacing: 5px; }
+    .word-space { word-spacing: 20px; }
+    .line-height { line-height: 2; }
+
+    /* ================= FONT STYLING ================= */
+    .big-text { font-size: 24px; }
+    .bold-text { font-weight: bold; }
+    .responsive-text { font-size: 2vw; }
+    .shorthand-font { font: italic bold 20px Georgia; }
+
+    /* ================= BOX MODEL ================= */
+    .box {
+      margin: 20px;
+      padding: 20px;
+      border: 2px solid #3498db;
+      border-radius: 10px;
+      background: #ecf5ff;
+    }
+
+    .shadow-box {
+      box-shadow: 5px 5px 12px gray;
+    }
+
+    .fixed-box {
+      width: 200px;
+      height: 100px;
+      background: pink;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ================= CARD ================= */
+    .card {
+      width: 300px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 10px #aaa;
+      margin: auto;
+    }
+
+    /* ================= GRADIENT & TRANSPARENCY ================= */
+    .gradient {
+      background: linear-gradient(to right, red, yellow);
+      padding: 15px;
+    }
+
+    .transparent {
+      background: rgba(0,0,255,0.3);
+      padding: 15px;
+    }
+
+    /* ================= BUTTON ================= */
+    button {
+      padding: 10px 20px;
+      background: #1abc9c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #16a085;
+    }
+
+    /* ================= NAVBAR ================= */
+    .navbar {
+      display: flex;
+      background: #333;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background: #111;
+    }
+
+    .navbar a.active {
+      background: #04AA6D;
+    }
+
+    /* ================= RESPONSIVE GALLERY ================= */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 25%;
+      padding: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery img { width: 50%; }
+    }
+
+    @media (max-width: 480px) {
+      .gallery img { width: 100%; }
+    }
+
+    /* ================= RESPONSIVE FORM ================= */
+    .form-box {
+      max-width: 600px;
+      padding: 20px;
+      border: 2px solid #04AA6D;
+      background: #f2f2f2;
+      border-radius: 8px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    input:focus {
+      background: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<section>
+  <h1>Anirudh Mamilla</h1>
+  <p class="bold-text">Web Developer | AI & Web Enthusiast</p>
+  <p>Email: <a href="mailto:anirudh.mamilla1@gmail.com">anirudh.mamilla1@gmail.com</a></p>
+</section>
+
+<!-- ================= TEXT DEMOS ================= -->
+<section>
+  <h2>CSS Text Properties</h2>
+  <p class="blue-text">Blue text</p>
+  <p class="center-text">Centered text</p>
+  <p class="underline">Underlined text</p>
+  <p class="uppercase">uppercase text</p>
+  <p class="letter-space">Letter spacing</p>
+  <p class="word-space">Word spacing demo</p>
+  <p class="line-height">Line height example with more spacing.</p>
+</section>
+
+<!-- ================= FONT DEMOS ================= -->
+<section>
+  <h2>Font Styling</h2>
+  <p class="big-text">Large text</p>
+  <p class="bold-text">Bold text</p>
+  <p class="responsive-text">Responsive text</p>
+  <p class="shorthand-font">Font shorthand applied</p>
+</section>
+
+<!-- ================= BOX MODEL ================= -->
+<section>
+  <h2>Box Model</h2>
+  <div class="box">Margin + Padding + Border</div>
+  <div class="box shadow-box">Box Shadow Example</div>
+  <div class="fixed-box">Fixed Box</div>
+</section>
+
+<!-- ================= CARD ================= -->
+<section>
+  <h2>Card UI</h2>
+  <div class="card">
+    <h3>Learning CSS</h3>
+    <p>The box model is the foundation of CSS layouts.</p>
+  </div>
+</section>
+
+<!-- ================= COLORS ================= -->
+<section>
+  <h2>Background Effects</h2>
+  <p class="gradient">Gradient background</p>
+  <div class="transparent">Transparent box</div>
+</section>
+
+<!-- ================= NAVIGATION ================= -->
+<div class="navbar">
+  <a class="active" href="#">Home</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- ================= GALLERY ================= -->
+<section>
+  <h2>Responsive Gallery</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+  </div>
+</section>
+
+<!-- ================= FORM ================= -->
+<section>
+  <h2>Responsive Contact Form</h2>
+  <div class="form-box">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email">
+      <select>
+        <option>India</option>
+        <option>USA</option>
+      </select>
+      <textarea placeholder="Message"></textarea>
+      <button>Submit</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
